@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <title>tabs and pills</title>
+    </head>
+    <body>
+        
+        <!-- Fixed Navigation Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top"> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="#">WebSiteName</a> 
+                </div> 
+                <ul class="nav navbar-nav"> 
+                    <li class="active"><a href="#">Home</a></li> <li><a href="#">Page 1</a></li> 
+                    <li><a href="#">Page 2</a></li> 
+                    <li><a href="#">Page 3</a></li> 
+                </ul> 
+            </div> 
+        </nav>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-bottom"> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="#">WebSiteName</a> 
+                </div> 
+                <ul class="nav navbar-nav"> 
+                    <li class="active"><a href="#">Home</a></li> <li><a href="#">Page 1</a></li> 
+                    <li><a href="#">Page 2</a></li> 
+                    <li><a href="#">Page 3</a></li> 
+                </ul> 
+            </div> 
+        </nav>
+        
+        <!-- Navigation Bar -->
+            <nav class="navbar navbar-default"> 
+                <div class="container-fluid"> 
+                    <div class="navbar-header"> 
+                        <a class="navbar-brand" href="#">WebSiteName</a> 
+                    </div> 
+                    <ul class="nav navbar-nav"> 
+                        <li class="active"><a href="#">Home</a></li> 
+                        <li><a href="#">Page 1</a></li> 
+                        <li><a href="#">Page 2</a></li> 
+                        <li><a href="#">Page 3</a></li> 
+                    </ul> 
+                </div> 
+            </nav>
+        
+        <!-- Inverted Navigation Bar -->
+            <nav class="navbar navbar-inverse"> 
+                <div class="container-fluid"> 
+                    <div class="navbar-header"> 
+                        <a class="navbar-brand" href="#">WebSiteName</a> 
+                    </div> 
+                    <ul class="nav navbar-nav"> 
+                        <li class="active"><a href="#">Home</a></li> 
+                        <li><a href="#">Page 1</a></li> 
+                        <li><a href="#">Page 2</a></li> 
+                        <li><a href="#">Page 3</a></li> 
+                    </ul> 
+                </div> 
+            </nav>
+        
+        <!-- Navigation Bar With Dropdown -->
+        <nav class="navbar navbar-inverse"> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="#">WebSiteName</a> 
+                </div> 
+                <ul class="nav navbar-nav"> 
+                    <li class="active"><a href="#">Home</a></li> <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a> 
+                    <ul class="dropdown-menu"> 
+                        <li><a href="#">Page 1-1</a></li> 
+                        <li><a href="#">Page 1-2</a></li> 
+                        <li><a href="#">Page 1-3</a></li> 
+                    </ul> 
+                    </li> 
+                    <li><a href="#">Page 2</a></li> 
+                    <li><a href="#">Page 3</a></li> 
+                </ul> 
+            </div> 
+        </nav>
+        
+        <!-- right aligned -->
+        <nav class="navbar navbar-inverse"> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="#">WebSiteName</a> 
+                </div> 
+                <ul class="nav navbar-nav"> 
+                    <li class="active"><a href="#">Home</a></li> <li><a href="#">Page 1</a></li> 
+                    <li><a href="#">Page 2</a></li> 
+                </ul> 
+                <ul class="nav navbar-nav navbar-right"> 
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul> 
+            </div> 
+        </nav>
+        
+        <!-- Navbar Buttons -->
+        <nav class="navbar navbar-inverse"> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <a class="navbar-brand" href="#">WebSiteName</a> 
+                </div> 
+                <ul class="nav navbar-nav"> 
+                    <li class="active"><a href="#">Home</a></li><li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <button class="btn btn-danger navbar-btn">Button</button>
+            </div>
+        </nav>
+        
+        <!-- Navbar forms -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li><li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </nav>
+        
+        <form class="navbar-form navbar-left">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        <!-- navbar text -->
+        <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#"></a>Link 2</li>
+            </ul>
+            <p class="navbar-text">Some text</p>
+        </nav>
+        
+        <!-- collapsing the navigation bar -->
+        <nav class="navbar navbar-inverse"> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+                    <a class="navbar-brand" href="#">WebSiteName</a> 
+                </div> 
+                <div class="collapse navbar-collapse" id="myNavbar"> 
+                    <ul class="nav navbar-nav"> 
+                        <li class="active"><a href="#">Home</a></li> 
+                        <li><a href="#">Page 1</a></li> 
+                        <li><a href="#">Page 2</a></li> 
+                        <li><a href="#">Page 3</a></li> 
+                    </ul> 
+                    <ul class="nav navbar-nav navbar-right"> 
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> 
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+        
+        
+        <div class="container">
+            <!-- to create a horizontal list use class="list-inline" or you can use tabs and pills-->
+            <ul class="list-inline"> 
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">Menu 1</a></li> 
+                <li><a href="#">Menu 2</a></li> 
+                <li><a href="#">Menu 3</a></li> 
+            </ul>
+            
+            <!-- Tabs are created with class="nav nav-tabs" 
+            centered tabs: class="nav-justified"
+            -->
+            <ul class="nav nav-tabs nav-justified"> 
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">Menu 1</a></li> 
+                <li><a href="#">Menu 2</a></li> 
+                <li><a href="#">Menu 3</a></li> 
+            </ul>
+            
+            <div>
+                <!-- Tabs With Dropdown Menu -->
+                <ul class="nav nav-tabs"> 
+                    <li class="active"><a href="#">Home</a></li> 
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a> 
+                        <ul class="dropdown-menu"> 
+                            <li><a href="#">Submenu 1-1</a></li> 
+                            <li><a href="#">Submenu 1-2</a></li> 
+                            <li><a href="#">Submenu 1-3</a></li>
+                        </ul> 
+                    </li> 
+                    <li><a href="#">Menu 2</a></li> 
+                    <li><a href="#">Menu 3</a></li> 
+                </ul>
+            </div>
+            
+            <!-- Pills are created with <ul class="nav nav-pills">. Also mark the current page with <li class="active">
+            centered pills: class="nav-justified"-->
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            
+            <!-- Vertical Pills -->
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            
+            <!-- Vertical Pills in a row -->
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            </div>
+            
+            <ul class="nav nav-pills nav-stacked"> 
+                <li class="active"><a href="#">Home</a></li> 
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a> 
+                    <ul class="dropdown-menu"> 
+                        <li><a href="#">Submenu 1-1</a></li> 
+                        <li><a href="#">Submenu 1-2</a></li> 
+                        <li><a href="#">Submenu 1-3</a></li> </ul> 
+                </li> 
+                <li><a href="#">Menu 2</a></li> 
+                <li><a href="#">Menu 3</a></li> 
+            </ul>
+            
+            <!-- Toggleable/Dynamic Tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Some content</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2</p>
+                </div>
+            </div>
+            
+            <!-- Toggleable/Dynamic Pills -->
+            <ul class="nav nav-pills"> 
+                <li class="active"><a data-toggle="pill" href="#home">Home</a></li> 
+                <li><a data-toggle="pill" href="#menu1">Menu 1</a></li> 
+                <li><a data-toggle="pill" href="#menu2">Menu 2</a></li> 
+            </ul> 
+            <div class="tab-content"> 
+                <div id="home" class="tab-pane fade in active">     <h3>HOME</h3> 
+                    <p>Some content.</p> 
+                </div> 
+                <div id="menu1" class="tab-pane fade"> 
+                    <h3>Menu 1</h3> 
+                    <p>Some content in menu 1.</p> 
+                </div> 
+                <div id="menu2" class="tab-pane fade"> 
+                    <h3>Menu 2</h3> 
+                    <p>Some content in menu 2.</p> 
+                </div> 
+            </div>
+            
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    </body>
+</html>

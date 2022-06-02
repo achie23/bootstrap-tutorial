@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <title>buttons</title>
+        
+        <style>
+            .btn-block {
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div>
+                <!-- The button classes can be used on an <a>, <button>, or <input> element -->
+                <button type="button" class="btn">Basic</button> 
+                <button type="button" class="btn btn-default">Default</button> 
+                <button type="button" class="btn btn-primary">Primary</button> 
+                <button type="button" class="btn btn-success">Success</button> 
+                <button type="button" class="btn btn-info">Info</button> 
+                <button type="button" class="btn btn-warning">Warning</button> 
+                <button type="button" class="btn btn-danger">Danger</button> 
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+                
+            <div>
+                <a href="#" class="btn btn-info" role="button">Link Button</a> 
+                <button type="button" class="btn btn-info">Button</button> 
+                <input type="button" class="btn btn-info" value="Input Button"> 
+                <input type="submit" class="btn btn-info" value="Submit Button">
+            </div>
+                
+            <div>
+                <!-- Bootstrap provides four button sizes: Large Medium Small XSmall -->
+                <button type="button" class="btn btn-primary btn-lg">Large</button>
+                <button type="button" class="btn btn-primary btn-md">Medium</button>
+                <button type="button" class="btn btn-primary btn-sm">Small</button>
+                <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+            </div>
+            
+            <div>
+                <!-- block level buttons -->
+                <button type="button" class="btn btn-primary btn-block">Button 1</button>
+                <button type="button" class="btn btn-primary btn-block">Button 2</button>
+            </div>
+            
+            <div>
+                <!-- Active/Disabled buttons -->
+                <button type="button" class="btn btn-primary active">Active Primary</button>
+                <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+            </div>
+
+            <div class="btn-group-xs">
+                <!-- button groups -->
+                <!-- Tip: Instead of applying button sizes to every button in a group, use class .btn-group-lg|sm|xs to size all buttons in the group: -->
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-info">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+                <button type="button" class="btn btn-success">Huawei</button>
+            </div>
+            
+            <div class="btn-group-vertical">
+                <!-- vertical button groups -->
+                <button type="button" class="btn btn-success">Apple</button>
+                <button type="button" class="btn btn-success">Samsung</button>
+                <button type="button" class="btn btn-success">Sony</button>
+                <button type="button" class="btn btn-success">Huawei</button>
+            </div>
+            
+            <div class="btn-group-justified">
+                <!-- justified button groups -->
+                <a href="#" class="btn btn-primary">Apple</a>
+                <a href="#" class="btn btn-primary">Samsung</a>
+                <a href="#" class="btn btn-primary">Sony</a>
+                <a href="#" class="btn btn-primary">Huawei</a>
+            </div>
+            
+            <!-- Note: For <button> elements, you must wrap each button in a .btn-group class: -->
+            <div class="btn-group btn-group-justified">     <div class="btn-group"> 
+                    <button type="button" class="btn btn-primary">Apple</button> 
+                </div> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-primary">Samsung</button>
+                </div> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-primary">Sony</button>
+                </div> 
+            </div>
+            
+            <!-- Nest button groups to create dropdown menus -->
+            <div class="btn-group"> 
+                <button type="button" class="btn btn-primary">Apple</button> 
+                <button type="button" class="btn btn-primary">Samsung</button> 
+                <div class="btn-group"> 
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> 
+                    Sony <span class="caret"></span></button> 
+                    <ul class="dropdown-menu" role="menu"> 
+                        <li><a href="#">Tablet</a></li> 
+                        <li><a href="#">Smartphone</a></li> 
+                    </ul> 
+                </div> 
+            </div>
+            
+            <div class="btn-group"> 
+                <!-- splittind button dropdowns -->
+                <button type="button" class="btn btn-primary">Sony</button> 
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button> 
+                    <ul class="dropdown-menu" role="menu"> 
+                        <li><a href="#">Tablet</a></li> 
+                        <li><a href="#">Smartphone</a></li> 
+                    </ul> 
+            </div>
+            
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    </body>
+</html>

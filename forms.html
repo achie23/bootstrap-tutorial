@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <title>forms</title>
+    </head>
+    <body>
+        <div class="container">
+            
+            <!-- vertical form (default) -->
+            <form>
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" class="form-control" name="fname" />
+                    <label for="lname">Last Name:</label>
+                    <input type="text" class="form-control" name="lname" />
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" />
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" />
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" />Remember me</label>
+                </div>
+                <button type="button" class="btn btn-primary">Sign Up</button>
+            </form>
+            <br />
+            
+            <!-- inline form. Note: This only applies to forms within viewports that are at least 768px wide!-->
+            <div>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <!-- You can hide the labels for all devices, except screen readers, by adding class="sr-only" to label -->
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" />
+                    </div>
+                    <div class="form-group checkbox">
+                        <label>Keep me signed in <input type="checkbox" /></label>
+                    </div>
+                    <button type="button" class="btn btn-success">Sign In</button>
+                </form>
+            </div>
+            <br />
+            
+            <!-- horizontal forms-->
+            <div>
+                <form class="form-horizontal">
+                    <div class="form-group form-group-lg">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" />
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+                        <label class="control-labe col-sm-2" for="pwd">Password:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" />
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="checkbox">
+                <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+                <label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+            </div>
+            
+            <div class="radio">
+                <label><input type="radio" name="optradio">Option 1</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Option 2</label>
+            </div>
+            <div class="radio disabled">
+                <label><input type="radio" name="optradio" disabled>Option 3</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="seloption">Select list:</label>
+                <select class="form-control" id="seloption">
+                    <option>Item 1</option>
+                    <option>Item 2</option>
+                    <option>Item 3</option>
+                    <option>Item 4</option>
+                </select>
+            </div>
+            
+            <div>
+                <form>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control"
+                        name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon">Text</span>
+                        <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                    </div>
+                </form>
+            </div>
+            
+            <div>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Focused</label>
+                        <div class="col-sm-10"> 
+                            <input class="form-control" id="focusedInput" type="text" value="Click to focus"> 
+                        </div> 
+                    </div> 
+                    <div class="form-group"> 
+                        <label for="inputPassword" class="col-sm-2 control-label">Disabled</label> 
+                        <div class="col-sm-10"> 
+                            <input class="form-control" id="disabledInput" type="text" disabled> 
+                        </div> 
+                    </div> 
+                    <fieldset disabled> 
+                        <div class="form-group"> 
+                            <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset disabled</label> 
+                            <div class="col-sm-10"> 
+                                <input type="text" id="disabledTextInput" class="form-control"> 
+                            </div> 
+                        </div> 
+                        <div class="form-group"> 
+                            <label for="disabledSelect" class="col-sm-2 control-label"></label> 
+                            <div class="col-sm-10"> 
+                                <select id="disabledSelect" class="form-control"> 
+                                    <option>Disabled select</option> 
+                                </select> 
+                            </div> 
+                        </div> 
+                    </fieldset> 
+                    <div class="form-group has-success has-feedback"> 
+                        <label class="col-sm-2 control-label" for="inputSuccess"> Input with success and icon</label> 
+                        <div class="col-sm-10"> 
+                            <input type="text" class="form-control" id="inputSuccess"> 
+                            <span class="glyphicon glyphicon-ok form-control-feedback"></span> 
+                        </div> 
+                    </div> 
+                    <div class="form-group has-warning has-feedback"> 
+                        <label class="col-sm-2 control-label" for="inputWarning"> Input with warning and icon</label> 
+                        <div class="col-sm-10"> 
+                            <input type="text" class="form-control" id="inputWarning">
+                                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span> 
+                        </div> 
+                    </div> 
+                    <div class="form-group has-error has-feedback"> 
+                        <label class="col-sm-2 control-label" for="inputError"> Input with error and icon</label> 
+                        <div class="col-sm-10"> 
+                            <input type="text" class="form-control" id="inputError"> 
+                            <span class="glyphicon glyphicon-remove form-control-feedback"></span> 
+                        </div> 
+                    </div> 
+                </form>
+            </div>
+            
+            <!-- example of some of the form control states in an Inline form -->
+            <div>
+                <form class="form-inline"> 
+                    <div class="form-group"> 
+                        <label for="focusedInput">Focused</label> 
+                        <input class="form-control" id="focusedInput" type="text"> 
+                    </div> <div class="form-group"> 
+                    <label for="inputPassword">Disabled</label> 
+                    <input class="form-control" id="disabledInput" type="text" disabled> 
+                    </div> 
+                    <div class="form-group has-success has-feedback"> 
+                        <label for="inputSuccess2">Input with success</label> 
+                        <input type="text" class="form-control" id="inputSuccess2"> 
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span> 
+                    </div> 
+                    <div class="form-group has-warning has-feedback"> 
+                        <label for="inputWarning2">Input with warning</label> 
+                        <input type="text" class="form-control" id="inputWarning2"> 
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span> 
+                    </div> 
+                    <div class="form-group has-error has-feedback"> 
+                        <label for="inputError2">Input with error</label> 
+                        <input type="text" class="form-control" id="inputError2"> 
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+            
+            
+            <!-- Input Sizing in forms:
+            Set the heights of input elements using classes like .input-lg and .input-sm.
+            Set the widths of elements using grid column classes like .col-lg-*and .colsm-*.-->
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="inputDefault">Default input</label>
+                        <input class="form-control" id="inputDefault" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSmall">Small input</label>
+                        <input class="form-control input-sm" id="inputSmall" type="text"  />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputLarge">Large input</label>
+                        <input class="form-control input-lg" id="inputLarge" type="text" />
+                    </div>
+                </form>
+            
+            </div>
+            
+            
+            
+            
+            
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    </body>
+</html>

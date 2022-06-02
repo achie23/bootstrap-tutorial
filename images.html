@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <title>Img</title>
+    </head>
+    <body>
+            
+        <!--You can also use Bootstrap's grid system in conjunction with the .thumbnail class to create an image gallery-->  
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="img/image1.jpeg">
+                        <img src="img/image1.jpeg" alt="image one" style="width:100%" />
+                        <div class="caption">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="img/image2.jpeg">
+                        <img src="img/image2.jpeg" alt="image two" style="width:100%" />
+                        <div class="caption">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="img/image3.jpeg">
+                        <img src="img/image3.jpeg" alt="image three" style="width:100%" />
+                        <div class="caption">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>          
+        </div>
+        <br /><br />
+        
+        <div>
+            <img class="img-responsive" src="img/image2.jpeg"  alt="image one" />  
+            <img src="img/image1.jpeg" class="img-rounded" alt="image one"  width="300" />   
+            <img src="img/image2.jpeg" class="img-circle" alt="image two"  width="300" />        
+            <img src="img/image3.jpeg" class="img-thumbnail" alt="image three"  width="300" />
+        </div>
+         <br />  
+       
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9"> 
+            <iframe class="embed-responsive-item" src="..."></iframe> 
+        </div>
+        <br />
+        
+        <!-- 4:3 aspect ratio -->
+        <div class="embed-responsive embed-responsive-4by3"> 
+            <iframe class="embed-responsive-item" src="..."></iframe> 
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    </body>
+</html>

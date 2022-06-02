@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" />  
+        <title>list groups</title>
+        <style>
+            .badge {
+                background-color: gray;
+            }
+            a:hover {
+                background-color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">First item</li>
+                    <li class="list-group-item">Another item</li>
+                    <li class="list-group-item">Yet another item</li>
+                </ul>
+            </div>
+            <div>
+                <!-- list group with badges -->
+                <ul class="list-group">
+                    <li class="list-group-item">New <span class="badge">12</span></li>
+                    <li class="list-group-item"><span class="badge">5</span> Deleted</li>
+                    <li class="list-group-item">Warnings <span class="badge">3</span></li>
+                </ul>
+            </div>
+            <div class="list-group">
+                <!-- list groups with links -->
+                <a href="#" class="list-group-item">link 1</a>
+                <a href="#" class="list-group-item">link 2</a>
+                <!-- active state -->
+                <a href="#" class="list-group-item active">link 3</a>
+                <!-- disabled item -->
+                <a href="#" class="list-group-item disabled">link 4</a>
+            </div>
+            <!-- contextual classes: 
+            .list-group-item-success, list-group-item-info, list-group-item-warning, and .list-group-item-danger: -->
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">First item</li>
+                    <li class="list-group-item list-group-item-info">Another item</li>
+                    <li class="list-group-item list-group-item-danger">Yet another item</li>
+                    <li class="list-group-item list-group-item-warning">Final item</li>
+                </ul>
+            
+            <!-- Custom content; any html element can be added to a list group item  -->
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    <h4 class="list-group-item-heading">First List Group Heading</h4>
+                    <p class="list-group-item-text">List Group Text</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Second List Group Heading</h4>
+                    <p class="list-group-item-text">List Group Text</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Final List Group Heading</h4>
+                    <p class="list-group-item-text">List Group Text</p>
+                </a>
+            </div>
+            
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    </body>
+</html>

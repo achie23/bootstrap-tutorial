@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <title>panels</title>
+        <style>
+            .panel-default  {
+                background-color: #dedede;
+            }
+            .panel-primary  {
+                background-color: steelblue;
+                color: white;
+            }
+            .panel-info  {
+                background-color: lightblue;
+                color: blue;
+            }
+            .panel-success  {
+                background-color: lightgreen;
+            }
+            .panel-warning  {
+                background-color: lightgoldenrodyellow;
+                color: rosybrown;
+            }
+            .panel-danger  {
+                background-color: pink;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <!-- A panel in bootstrap is a bordered box with some padding around its content.
+            Panels are created with the .panel class, and content inside the panel has a .panel-body class -->
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    A Basic Panel
+                </div>
+            </div>
+            <br />
+            <div class="panel panel-info">
+                <div class="panel-heading">Panel Heading</div>
+                <div class="panel-body">Panel Content</div>
+                <div class="panel-footer">Panel Footer</div>
+            </div>
+            <br />
+            
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Panel Heading 1</div>
+                    <div class="panel-body">Panel Content 1</div>
+                    <div class="panel-footer">Panel Footer 1</div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Panel Heading 2</div>
+                    <div class="panel-body">Panel Content 2</div>
+                    <div class="panel-footer">Panel Footer 2</div>
+                </div>
+            </div>
+            <br />
+            
+            <!--Panels with Contextual Classes-->
+            <div class="panel panel-default">Panel with panel-default class</div>
+            <div class="panel-body">Panel Content</div>
+            
+            <div class="panel panel-primary">Panel with panel-primary class</div>
+            <div class="panel-body">Panel Content</div>
+            
+            <div class="panel panel-info">Panel with panel-info class</div>
+            <div class="panel-body">Panel Content</div>
+            
+            <div class="panel panel-success">Panel with panel-success class</div>
+            <div class="panel-body">Panel Content</div>
+            
+            <div class="panel panel-warning">Panel with panel-warning class</div>
+            <div class="panel-body">Panel Content</div>
+            
+            <div class="panel panel-danger">Panel with panel-danger class</div>
+            <div class="panel-body">Panel Content</div>
+            
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    </body>
+</html>
